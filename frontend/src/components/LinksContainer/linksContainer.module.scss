@@ -29,7 +29,12 @@
       margin: 10px;
 
       a {
-        background-color: var(--white-100);
+        backdrop-filter: blur(var(--blurDefault));
+
+        background-color: var(
+          --blueWhite-withTransparence
+        );
+
         font-size: 17px;
         box-shadow: var(--shadow-default);
         border-radius: var(

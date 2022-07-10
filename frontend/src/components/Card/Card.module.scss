@@ -1,7 +1,10 @@
 .card {
   max-width: var(--max-width-contents);
   width: 100%;
-  background-color: var(--white-100);
+  // background-color: var(--white-100);
+  background-color: var(--blueWhite-withTransparence);
+
+  backdrop-filter: blur(var(--blurDefault));
 
   border-radius: var(--border-radius-default);
   box-shadow: var(--shadow-default);
@@ -69,7 +72,10 @@
 
         width: 100%;
         list-style: none;
-        background-color: var(--white-100);
+        // background-color: var(--white-100);
+
+        background: transparent;
+        
         margin: 2px;
         a {
           text-decoration: none;

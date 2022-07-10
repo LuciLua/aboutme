@@ -9,7 +9,7 @@
 :root {
   // Colors
   --palete-1: rgb(45, 45, 45);
-  --palete-1-hover: rgb(84, 84, 168);
+  --palete-1-hover: rgb(33, 41, 73);
 
   //   Whites
   --white-100: #fff;
@@ -17,8 +17,11 @@
   --white-50: rgb(132, 132, 132);
   --white-25: rgb(66, 66, 66);
 
+
+  --blueWhite-withTransparence: rgba(212, 230, 247, 0.64);
+
   //   Borders
-  --border-radius-default: 10px;
+  --border-radius-default: 12px;
   --border-radius-100: 100%;
 
   //   Shadows
@@ -26,8 +29,11 @@
     rgba(147, 147, 147, 0.237);
 
   //   Widths
-
   --max-width-contents: 600px;
+
+  // Blur
+  --blurDefault: 8px;
+
 }
 
 .home {
@@ -55,19 +61,33 @@
   }
 
   .box {
-    top: 0;
-
     position: absolute;
-    z-index: 1;
 
     overflow: hidden;
-    pointer-events: visibleFill;
+    margin: 0;
 
-    animation: move 10s infinite alternate-reverse;
+    top: 0;
+    padding: 0;
 
-    iframe {
-      width: 120%;
-      height: 120%;
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    z-index: -1;
+
+    // filter: blur(3px);
+
+    video, img{
+      min-height: 100vh;
+      min-width: 100vw;
+      position: absolute;
+      margin: 0;
+
+      object-fit: cover;
+
+      top: 0;
+
     }
   }
 }

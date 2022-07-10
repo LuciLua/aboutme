@@ -9,7 +9,6 @@ export default function Document() {
   return (
     <Html lang='en'>
       <Head>
-        <title>LuciLua</title>
         <meta
           name='description'
           content='Info about me'
