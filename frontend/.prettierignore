@@ -1,0 +1,9 @@
+node_modules
+public
+package.json
+.gitignore
+tsconfig.json
+.prettierrc.json
+.next
+next-env.d.ts
+yarn.lock

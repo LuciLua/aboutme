@@ -5,7 +5,11 @@ function Li(props) {
 
   return (
     <li>
-      <Link href={href} target="_blank" title={title}>
+      <Link
+        href={href}
+        target='_blank'
+        title={title}
+      >
         <a title={title}>
           {icon}
           <span>{props.children}</span>

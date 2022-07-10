@@ -46,13 +46,17 @@
       line-height: 1.5;
       font-size: 14px;
 
-      max-width: calc(var(--max-width-contents) - 40%);
+      max-width: calc(
+        var(--max-width-contents) - 40%
+      );
     }
   }
 
   footer {
     width: 100%;
-    max-width: calc(var(--max-width-contents) - 60%);
+    max-width: calc(
+      var(--max-width-contents) - 60%
+    );
     ul {
       width: 100%;
       display: flex;
@@ -75,7 +79,9 @@
           width: 40px;
           height: 40px;
           //   box-shadow: var(--shadow-default);
-          border-radius: var(--border-radius-default);
+          border-radius: var(
+            --border-radius-default
+          );
 
           display: flex;
           justify-content: center;

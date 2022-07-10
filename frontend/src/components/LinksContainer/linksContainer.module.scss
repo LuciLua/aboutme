@@ -32,7 +32,9 @@
         background-color: var(--white-100);
         font-size: 17px;
         box-shadow: var(--shadow-default);
-        border-radius: var(--border-radius-default);
+        border-radius: var(
+          --border-radius-default
+        );
 
         text-decoration: none;
         color: var(--palete-1);
