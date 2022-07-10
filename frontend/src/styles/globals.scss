@@ -12,8 +12,8 @@
   --palete-1-hover: rgb(84, 84, 168);
 
   //   Whites
-  --white-100: rgb(255, 255, 255);
-  --white-75: rgb(246, 246, 246);
+  --white-100: #fff;
+  --white-75: transparent;
   --white-50: rgb(132, 132, 132);
   --white-25: rgb(66, 66, 66);
 
@@ -35,15 +35,40 @@
   align-items: center;
   flex-direction: column;
 
+  position: relative;
+
   font-family: "Ubuntu";
+
+  overflow: hidden;
 
   padding: 10px;
 
+  max-width: 100vw;
   width: 100%;
   min-height: 100vh;
+  height: 100%;
   background-color: var(--white-75);
 
   & > div {
     margin: 5px 0;
   }
+
+  .box{
+
+    top: 0;
+
+    position: absolute;
+    z-index: 1;
+
+    overflow:hidden;
+    pointer-events: visibleFill;
+
+    animation: move 10s infinite alternate-reverse;
+
+    iframe{
+      width: 120%;
+      height: 120%;
+    }
+  }
+
 }
