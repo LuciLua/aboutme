@@ -1,0 +1,49 @@
+*::before,
+*,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  // Colors
+  --palete-1: rgb(45, 45, 45);
+  --palete-1-hover: rgb(84, 84, 168);
+
+  //   Whites
+  --white-100: rgb(255, 255, 255);
+  --white-75: rgb(246, 246, 246);
+  --white-50: rgb(132, 132, 132);
+  --white-25: rgb(66, 66, 66);
+
+  //   Borders
+  --border-radius-default: 10px;
+  --border-radius-100: 100%;
+
+  //   Shadows
+  --shadow-default: 0 0 8px rgba(147, 147, 147, 0.237);
+
+  //   Widths
+
+  --max-width-contents: 600px;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: "Ubuntu";
+
+  padding: 10px;
+
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--white-75);
+
+  & > div {
+    margin: 5px 0;
+  }
+}
