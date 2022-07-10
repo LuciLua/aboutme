@@ -1,8 +1,8 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang='en'>
+    <Html lang="en">
       <Head>
         <title>LuciLua</title>
         <meta name="description" content="Info about me" />
@@ -13,5 +13,5 @@ export default function Document() {
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }

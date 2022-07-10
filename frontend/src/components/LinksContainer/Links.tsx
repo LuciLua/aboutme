@@ -1,68 +1,44 @@
-import styles from "./linksContainer.module.scss"
-import { AiFillCode } from "react-icons/ai"
-import Link from "next/link"
+import styles from "./linksContainer.module.scss";
+import { AiFillCode, AiFillYoutube, AiFillFacebook } from "react-icons/ai";
+import Li from "./Li";
 
 function LinksContainer() {
-    return (
-        <div className={styles.linksContainer}>
-            <ul>
-                <li>
-                    <Link href="https://www.luci-lua.tk/"
-                        title="Portfólio">
-                        <a title="Portfólio">
-                            <AiFillCode />
-                            <span>
-                                Portfólio
-                            </span>
-                        </a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href="https://www.youtube.com/channel/UCIbJuoAAdTP9rClO7mK-aVg"
-                        title="YT:Luci4Dev">
-                        <a title="YT:Luci4Dev">
-                            <AiFillCode />
-                            <span>
-                                Canal Youtube: Luci4Dev
-                            </span>
-                        </a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href="https://www.facebook.com/luci4dev"
-                        title="FB:Luci4Dev">
-                        <a title="FB:Luci4Dev">
-                            <AiFillCode />
-                            <span>
-                                Página no facebook: Luci4Dev
-                            </span>
-                        </a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href="https://www.youtube.com/channel/UCuXXXen-BlroM9jvu9pljiA"
-                        title="YT:GamePlays">
-                        <a title="YT:GamePlays">
-                            <AiFillCode />
-                            <span>
-                                Canal no Youtube: GamePlays
-                            </span>
-                        </a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href="https://www.facebook.com/gameplaysluci"
-                        title="FB:GamePlays">
-                        <a title="FB:GamePlays">
-                            <AiFillCode />
-                            <span>
-                                Página no Facebook: GamePlays
-                            </span>
-                        </a>
-                    </Link>
-                </li>
-            </ul>
-        </div>
-    )
+  return (
+    <div className={styles.linksContainer}>
+      <ul>
+        <Li href="https://luci-lua.tk" title="Portfólio" icon={<AiFillCode />}>
+          Portfólio
+        </Li>
+        <Li
+          href="https://www.youtube.com/channel/UCIbJuoAAdTP9rClO7mK-aVg"
+          title="YT:Luci4Dev"
+          icon={<AiFillYoutube />}
+        >
+          Canal Youtube: Luci4Dev
+        </Li>
+        <Li
+          href="https://www.facebook.com/luci4dev"
+          title="FB:Luci4Dev"
+          icon={<AiFillFacebook />}
+        >
+          Página no Facebook: Luci4Dev
+        </Li>
+        <Li
+          href="https://www.youtube.com/channel/UCuXXXen-BlroM9jvu9pljiA"
+          title="YT:GamePlays"
+          icon={<AiFillYoutube />}
+        >
+          Canal no Youtube: GamePlays
+        </Li>
+        <Li
+          href="https://www.facebook.com/gameplaysluci"
+          title="FB:GamePlays"
+          icon={<AiFillFacebook />}
+        >
+          Página no Facebook: GamePlays
+        </Li>
+      </ul>
+    </div>
+  );
 }
-export default LinksContainer
+export default LinksContainer;

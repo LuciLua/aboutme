@@ -53,22 +53,20 @@
     margin: 5px 0;
   }
 
-  .box{
-
+  .box {
     top: 0;
 
     position: absolute;
     z-index: 1;
 
-    overflow:hidden;
+    overflow: hidden;
     pointer-events: visibleFill;
 
     animation: move 10s infinite alternate-reverse;
 
-    iframe{
+    iframe {
       width: 120%;
       height: 120%;
     }
   }
-
 }
