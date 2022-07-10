@@ -11,7 +11,7 @@ function Li(props) {
         title={title}
       >
         <a title={title}>
-          {icon}
+          <span>{icon}</span>
           <span>{props.children}</span>
         </a>
       </Link>

@@ -9,7 +9,7 @@
 :root {
   // Colors
   --palete-1: rgb(45, 45, 45);
-  --palete-1-hover: rgb(33, 41, 73);
+  --palete-1-hover: rgb(49, 91, 255);
 
   //   Whites
   --white-100: #fff;
@@ -27,6 +27,8 @@
   //   Shadows
   --shadow-default: 0 0 8px
     rgba(147, 147, 147, 0.237);
+
+    --shadow-color-bright: rgba(238, 251, 255, 0.682);
 
   //   Widths
   --max-width-contents: 600px;

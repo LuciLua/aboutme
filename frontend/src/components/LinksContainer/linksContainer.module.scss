@@ -24,6 +24,7 @@
       align-items: center;
 
       width: 100%;
+      height: 50px;
       list-style: none;
 
       margin: 10px;
@@ -35,7 +36,7 @@
           --blueWhite-withTransparence
         );
 
-        font-size: 17px;
+        font-size: 16px;
         box-shadow: var(--shadow-default);
         border-radius: var(
           --border-radius-default
@@ -43,20 +44,41 @@
 
         text-decoration: none;
         color: var(--palete-1);
-        padding: 15px 20px;
+        // padding: 15px 20px;
+
+        display: flex;
+        align-items: center;
 
         width: 100%;
+        height: 100%;
 
         transition: 0.3s;
 
-        &:hover {
-          transition: 0.3s;
+        li:hover {
+          transition: 0.1s;
           color: var(--palete-1-hover);
         }
 
-        span {
-          margin-left: 10px;
+        span:nth-child(1) {
+          margin-left: 20px;
         }
+        span:nth-child(2) {
+          margin-left: 15px;
+          transition: 0.1s;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 0 14px
+          var(--shadow-color-bright);
+        border-radius: var(
+          --border-radius-default
+        );
+      }
+
+      &:hover a {
+        color: var(--palete-1-hover);
+        transition: 0.1s;
       }
     }
   }
