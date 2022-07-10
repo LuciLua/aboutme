@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import Card from "../components/Card/Card";
@@ -6,6 +7,9 @@ import LinksContainer from "../components/LinksContainer/Links";
 function Home(props) {
   return (
     <div className='home'>
+      <Head>
+        <title>Luci Lua</title>
+      </Head>
       <Card />
       <LinksContainer />
       <div className="box">
