@@ -11,7 +11,7 @@ function LinksContainer() {
     <div className={styles.linksContainer}>
       <ul>
         <Li
-          href='https://luci-lua.tk'
+          href='https://lucilua.com.br'
           title='Portfólio'
           icon={<AiFillCode color="#15a" />}
         >
